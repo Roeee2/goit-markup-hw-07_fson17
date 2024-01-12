@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/main.min.css" rel="stylesheet" type="text/css" />
+    <title>Zadanie domowe - WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container"></div>
+    </header>
+
+    <!-- MAIN-->
+
+    <main></main>
+
+    <!-- FOOTER -->
+
+    <footer></footer>
+
+    <!-- mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__burger-close js-close-menu">
+        <svg width="24px" height="24px">
+          <use href="./images/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-container__nav">
+        <li class="menu-container__nav--option">
+          <a href="" class="menu-container__nav--link">Studio</a>
+        </li>
+        <li class="menu-container__nav--option">
+          <a href="" class="menu-container__nav--link">Portfolio</a>
+        </li>
+        <li class="menu-container__nav--option">
+          <a href="" class="menu-container__nav--link">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="menu_container__contact">
+        <p class="menu-container__phone">
+          <a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+        </p>
+        <p class="menu-container__mail">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </p>
+        <ul class="menu-container__socials">
+          <li class="menu-container__socials--icon-circle">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg
+                class="menu-container__socials--icon"
+                width="26px"
+                height="26px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-container__socials--icon-circle">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg
+                class="menu-container__socials--icon"
+                width="26px"
+                height="26px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-container__socials--icon-circle">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg
+                class="menu-container__socials--icon"
+                width="26px"
+                height="26px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-container__socials--icon-circle">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg
+                class="menu-container__socials--icon"
+                width="26px"
+                height="26px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" data-modal-close>
+          <svg width="22px" height="22px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="contact">
+          <h2>Zostaw swoje dane w formularzu poniżej</h2>
+          <form name="contact-form" autocomplete="on" novalidate>
+            <label>
+              <h3 class="contact__label-header">Imię</h3>
+              <div class="contact__field">
+                <input
+                  type="text"
+                  name="contact-name"
+                  class="contact__field--box" />
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </label>
+            <label>
+              <h3 class="contact__label-header">Telefon</h3>
+              <div class="contact__field">
+                <input
+                  type="text"
+                  name="contact-phone"
+                  class="contact__field--box" />
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </label>
+            <label>
+              <h3 class="contact__label-header">Email</h3>
+              <div class="contact__field">
+                <input
+                  type="email"
+                  name="contact-email"
+                  class="contact__field--box" />
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </label>
+            <label>
+              <h3 class="contact__label-header">Komentarz</h3>
+              <div class="contact__field">
+                <textarea
+                  class="contact__comment"
+                  name="comment"
+                  rows="5"
+                  placeholder="Wprowadź tekst"></textarea>
+              </div>
+            </label>
+
+            <div class="contact__checkbox-container">
+              <input type="checkbox" id="checkbox1" name="contact-checkbox" />
+              <label for="checkbox1" class="contact__declaration-label">
+                <div class="contact__empty-box">
+                  <svg
+                    width="16px"
+                    height="15px"
+                    class="contact__checkbox-container--empty">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </div>
+                <div class="contact__box-checked">
+                  <svg
+                    width="16px"
+                    height="15px"
+                    class="contact__checkbox-container--checked">
+                    <use href="./images/icons.svg#icon-checkbox-blue"></use>
+                  </svg>
+                </div>
+                Oświadczam iż akceptuję
+                <a class="contact__declaration-link" href="#">Regulamin</a> i
+                <a class="contact__declaration-link" href="#"
+                  >Politykę Prywatności.</a
+                >
+              </label>
+            </div>
+
+            <div class="contact__send-button">
+              <button type="submit" class="contact__contact-button">
+                Wyślij
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
