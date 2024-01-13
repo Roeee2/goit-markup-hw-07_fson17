@@ -3,13 +3,11 @@
 @use "./../utils/globals" as *;
 
 .head {
-  display: flex;
-  margin: 0 0 0 0;
-  border: 1px solid var(--cornflower);
   background: var(--white);
   box-shadow: $hdsd1, $hdsd2, $hdsd3;
   box-sizing: border-box;
   justify-content: space-between;
+
   height: 70px;
 
   @include tablet {
@@ -19,4 +17,8 @@
   @include desktop {
     height: 72px;
   }
+}
+
+.head h2 {
+  margin: 0;
 }
