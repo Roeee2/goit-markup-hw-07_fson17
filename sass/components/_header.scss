@@ -4,10 +4,8 @@
 
 .head {
   background: var(--white);
-  box-shadow: $hdsd1, $hdsd2, $hdsd3;
   box-sizing: border-box;
   justify-content: space-between;
-
   height: 70px;
 
   @include tablet {
@@ -17,8 +15,17 @@
   @include desktop {
     height: 72px;
   }
+
+  .border {
+    box-shadow: $hdsd1, $hdsd2, $hdsd3;
+  }
+
+  &__web-logo {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.head h2 {
+.container h2 {
   margin: 0;
 }
