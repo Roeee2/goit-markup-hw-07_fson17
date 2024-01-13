@@ -2,6 +2,10 @@
 @use "./../utils/mixins" as *;
 @use "./../utils/globals" as *;
 
+.border {
+  box-shadow: $hdsd1, $hdsd2, $hdsd3;
+}
+
 .head {
   background: var(--white);
   box-sizing: border-box;
@@ -16,13 +20,15 @@
     height: 72px;
   }
 
-  .border {
-    box-shadow: $hdsd1, $hdsd2, $hdsd3;
-  }
-
-  &__web-logo {
+  &__logo {
     display: flex;
     align-items: center;
+
+    @include logo;
+
+    &--web {
+      color: $iris;
+    }
   }
 }
 
